@@ -1,8 +1,10 @@
 /**
  * Server have a central file, which contains the entry point.
  * Normally that is app.ts or server.ts.
- * To run this application switch to this folder and run "npm app.js" from the console.
+ * To run this application switch to this folder and run "node app.js" from the console.
  * Now the server runs and should print the request information at the console
+ * 
+ * The server always can be stopped by ctrl+C
  */
 
 const http = require("http");

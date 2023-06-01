@@ -1,5 +1,6 @@
 /**
  * This example shows how to send some html as response
+ * Here are some more information about headers and their role: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
  */
 
 const http = require("http");
