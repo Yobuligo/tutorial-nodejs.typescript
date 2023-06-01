@@ -1,0 +1,4 @@
+Node.js is a JavaScript runtime environment. 
+The browser is used to displayed content via HTML. JavaScript is used to show dynamic content and handle events. 
+Node.js is responsible to translate JavaScript to machine code which can be read by the operation system.
+This translation is done via V8 in the browser an works together with Node.js.
