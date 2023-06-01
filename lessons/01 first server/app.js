@@ -7,7 +7,12 @@
 
 const http = require("http");
 
+/**
+ * This creates a server and by handing over the anonymous function the server will run permanently
+ * When accessing the server via browser by calling localhost:3000 the anonymous function is called.
+ */
 const server = http.createServer((req, res) => {
+  // This code is always called, when the key F5 is pressed within a browser.
   console.log(req);
 });
 
