@@ -33,7 +33,9 @@ http
         const parsedBody = Buffer.concat(body).toString();
         console.log(parsedBody);
         const message = parsedBody.split("=")[1];
-        fs.writeFileSync("message.txt", message);
+        // use writeFile instead of writeFileSync. WriteFileSync will block the execution of code while writeFile will be executed asynchronously.
+        fs.writeFile("message.txt", message);
+        // fs.writeFileSync("message.txt", message);
       });
 
       res.statusCode = 302;
