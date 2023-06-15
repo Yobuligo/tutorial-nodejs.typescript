@@ -1,0 +1,4 @@
+Node.js is always a single thread application. 
+This means actually when it is used by several users, which are e.g. connected to a backend, that the server must be very slow and perhaps we have performance issues.
+But it is important to keep in mind, that Node.js works close together with a Worker Pool (probably of the Operating System) which has access to Threads.
+And actually Node.js is only handing over the work to those Threads.

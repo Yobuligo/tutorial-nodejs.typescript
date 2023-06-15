@@ -29,20 +29,24 @@ http
         body.push(chunk);
       });
 
-      req.on("end", () => {
+      return req.on("end", () => {
         const parsedBody = Buffer.concat(body).toString();
         console.log(parsedBody);
         const message = parsedBody.split("=")[1];
         // use writeFile instead of writeFileSync. WriteFileSync will block the execution of code while writeFile will be executed asynchronously.
-        fs.writeFile("message.txt", message);
-        // fs.writeFileSync("message.txt", message);
+        fs.writeFile("message.txt", message, (err) => {
+          res.statusCode = 302;
+          res.setHeader("Location", "/");
+          return res.end();
+        });
       });
-
-      res.statusCode = 302;
-      res.setHeader("Location", "/");
-      return res.end();
     }
 
     res.setHeader("Content-Type", "text/html");
+    res.write("<html>");
+    res.write("<head><title>My first page</title></head>");
+    res.write("<body><h1>Hello World from my Node.js server</h1></body>");
+    res.write("</html>");
+    res.end();
   })
   .listen(3000);
