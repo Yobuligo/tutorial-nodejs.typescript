@@ -2,3 +2,12 @@ Node.js is always a single thread application.
 This means actually when it is used by several users, which are e.g. connected to a backend, that the server must be very slow and perhaps we have performance issues.
 But it is important to keep in mind, that Node.js works close together with a Worker Pool (probably of the Operating System) which has access to Threads.
 And actually Node.js is only handing over the work to those Threads.
+
+The requests are processed via an Event Loop.
+This event loop has several tasks to do, which have a specific order:
+1. Timers: it checks if there are any timer callbacks, which have to be called (which can be set via setTimeout or setInterval)
+2. Pending Callbacks: it checks pending callbacks like IO operations (e.g. reading or writing from the file system or network)
+3. Poll phase: check if there are new requests, which have to be handled
+4. Check: checks if there are requests, which have to be executed immediately (e.g. by using setImmediate). But of cause only in the order of that loop.
+5. Close Callbacks: Handling close events.
+6. Continue again, beside if the server is stopped via process.exit()
