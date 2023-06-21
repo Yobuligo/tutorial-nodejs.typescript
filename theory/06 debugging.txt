@@ -1,0 +1,2 @@
+The following article shows in detail how to debug node.js applications:
+https://code.visualstudio.com/docs/nodejs/nodejs-debugging
