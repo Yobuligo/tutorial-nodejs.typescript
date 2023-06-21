@@ -5,3 +5,6 @@
     3.1. define a router 
     3.2. define the routes itself
 4. Call use(router) in app.ts
+... implement the project as implemented :P
+
+Important! To start the sever we still have to call "node app.js" but not "node app.ts", as Node.js only understands JavaScript
