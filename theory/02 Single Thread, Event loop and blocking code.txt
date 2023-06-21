@@ -11,3 +11,5 @@ This event loop has several tasks to do, which have a specific order:
 4. Check: checks if there are requests, which have to be executed immediately (e.g. by using setImmediate). But of cause only in the order of that loop.
 5. Close Callbacks: Handling close events.
 6. Continue again, beside if the server is stopped via process.exit()
+
+=> Node.js runs in an event driven approach and non blocking

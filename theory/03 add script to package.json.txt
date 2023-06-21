@@ -1,0 +1,14 @@
+The package.json can be used to install 3rd party libraries. 
+In addition it can be used to provide scripts, which can be executed via npm.
+Follow these steps to add a new script:
+    - run npm init to add the package.json file
+    - under section "scripts" add a new entry "start" followed by colon and the command, which should be executed like "node app.js"
+
+Start is a special script name, anyway the lines above ("start":"node app.js") will add a command start to npm, which runs "node app.js" when executed.
+This can be done via command "npm start"
+
+As mentioned above "start" is a special script name. In case you would add
+    "start-server": "node app.js"
+looks actually the same. 
+But anyway you will get an error when running the command.
+Instead it is required to run "npm run start-server"
