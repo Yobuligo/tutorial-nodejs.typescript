@@ -1,2 +1,0 @@
-Express can be installed with the following command:
-npm install express --save

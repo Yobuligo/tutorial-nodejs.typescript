@@ -1,0 +1,5 @@
+Express can be installed with the following command:
+npm install express --save
+
+Express is part of the middleware as requests are always going through express.
+I only communicate with express no matter if I get a request or send a response.
