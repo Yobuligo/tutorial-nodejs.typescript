@@ -3,3 +3,8 @@ npm install express --save
 
 Express is part of the middleware as requests are always going through express.
 I only communicate with express no matter if I get a request or send a response.
+
+Helper:
+Install BodyParser for parsing body details
+npm install --save body-parser
+npm install --save-dev @types/body-parser
