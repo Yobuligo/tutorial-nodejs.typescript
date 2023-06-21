@@ -1,4 +1,32 @@
 Nodemon is a library that can be used for backend developments.
 It is responsible for automatically restarting the server when code changes were made.
-It can be installed 
-npm install nodemon --save-dev
+It can be installed via:
+    npm install nodemon --save-dev
+
+To use it adjust the package.json file.
+Adjust the value of script "Start" to "start":"nodemon app.js" instead of "start":"node app.js"
+
+Restart debugger automatically with each code change:
+Therefore go to "Run -> Add configuration" Node.js
+add parameter
+    "restart":true,
+    "runtimeExecutable": "nodemon"
+
+
+In addition you can add the following to print the console.logs to the integrated terminal
+    "console":"integratedTerminal"
+
+
+finally the configuration looked like the following:
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/app.js"
+            "restart":true,
+            "runtimeExecutable": "nodemon",
+            "console":"integratedTerminal"
+        }
+    ]
+
