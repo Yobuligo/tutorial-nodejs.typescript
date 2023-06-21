@@ -1,0 +1,4 @@
+To use TypeScript instead of JavaScript for the Node.js application.
+It is required to install node types so that TypeScript can be interpreted.
+This can be achieved by calling the following command.
+        npm install --save @types/node
