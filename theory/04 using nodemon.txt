@@ -1,0 +1,4 @@
+Nodemon is a library that can be used for backend developments.
+It is responsible for automatically restarting the server when code changes were made.
+It can be installed 
+npm install nodemon --save-dev

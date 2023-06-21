@@ -1,0 +1,9 @@
+There are three ways to install packages.
+    1. for the project and the packages is required in production. Use the following command
+        npm install <package-name> --save
+
+    2. for the project but the package is only required for development. Use the following command
+        npm install <package-name> --save-dev
+
+    3. not only for a project, but for the whole system. Use the following command
+        npm install <package-name> -g
