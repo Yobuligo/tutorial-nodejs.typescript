@@ -1,0 +1,10 @@
+1. Error accessing the body of a request
+    E.g. I get the error the body or the accessed property is undefined
+
+    Check:
+        1. body-parser installed?
+        2. body-parser set as middleware? E.g.
+            const app = express();
+            app.use(bodyParser.json());
+            app.use(router);
+            app.listen(3000);
