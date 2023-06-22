@@ -23,10 +23,16 @@ finally the configuration looked like the following:
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/app.js"
+            "program": "${workspaceFolder}/app.js",
             "restart":true,
             "runtimeExecutable": "nodemon",
             "console":"integratedTerminal"
         }
     ]
 
+Probably the application can be started by using "node app.js"
+But if the app.js isnt found check: 
+    1. if your code was compiled
+    2. is the package.json config correct. Does the "start" script points to the app.js. E.g. if the compiled code is located in dist/* the start script parameter must set to "start":"dist/app.js"
+    3. nodemon wasn't found. It can be solved by installing nodemon globally
+    4. use command "npm start" to start the server
