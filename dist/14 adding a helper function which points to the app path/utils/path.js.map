@@ -1,0 +1,1 @@
+{"version":3,"file":"path.js","sourceRoot":"","sources":["../../../src/02 express/14 adding a helper function which points to the app path/utils/path.ts"],"names":[],"mappings":";;;;;;;AAAA,8CAAwB;AAExB,IAAM,KAAK,GAAG;IACZ,MAAM,IAAI,KAAK,EAAE,CAAC;AACpB,CAAC,CAAC;AAEW,QAAA,OAAO,GAAG,cAAI,CAAC,OAAO,CAAC,MAAA,MAAA,OAAO,CAAC,IAAI,0CAAE,QAAQ,mCAAI,KAAK,EAAE,CAAC,CAAC"}

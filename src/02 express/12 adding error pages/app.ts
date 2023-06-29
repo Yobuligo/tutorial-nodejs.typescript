@@ -1,6 +1,9 @@
 /**
  * As the middleware is called in the order it is provided an error page can be easily added as last middleware.
  * This means whenever a request was handled before, fine. If no middleware handled a request an error can be provided.
+ * 
+ * It is also possible to provide an HTML page that contains the whole error information.
+ * How to send an HTML page as error page see the following chapter.
  */
 
 import express from "express";

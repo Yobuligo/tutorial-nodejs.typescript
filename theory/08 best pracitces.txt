@@ -1,1 +1,3 @@
-- put routes in a separate folder "routes"
+- add routes in a separate folder "routes"
+- add HTML pages to folder "views"
+- add helper functions to folder "utils"
