@@ -3,6 +3,8 @@
  * The content type is automatically set to "text/html" e.g. or "application/json". Depending on your data. That is done by express
  *
  * This information can be get within the browser, by opening the developer tools with F12 -> choosing network -> selecting the called endpoint -> and all details are displayed
+ * 
+ * This can also be overwritten by using req.setHeader("") and giving the corresponding content type.
  */
 
 import bodyParser from "body-parser";
