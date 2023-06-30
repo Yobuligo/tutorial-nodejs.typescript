@@ -1,3 +1,6 @@
 - add routes in a separate folder "routes"
 - add HTML pages to folder "views"
 - add helper functions to folder "utils"
+- add model to folder "models"
+- add router to a folder "controllers"
+    - the controllers in form of routes are accessing the model
