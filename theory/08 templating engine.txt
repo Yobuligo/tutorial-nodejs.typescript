@@ -1,0 +1,2 @@
+Here we are talking more about using HTML on the server side an implementing HTML pages.
+Templating engine seems to be an approach for generating HTML pages on the fly by giving a set of data.
