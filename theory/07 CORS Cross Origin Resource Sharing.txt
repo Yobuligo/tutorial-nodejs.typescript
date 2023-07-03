@@ -1,1 +1,21 @@
 https://www.stackhawk.com/blog/react-cors-guide-what-it-is-and-how-to-enable-it/
+
+CORS - Cross Origin Resource Sharing
+It means that sharing of resources like REST-calls are not allowed. Instead the server must trust the client.
+It was invented to protect the users, the clients. So it is actually checked from the browser.
+It is some kind of protocol between the frontend and backend.
+If the server doesn't care about safety and this protocol the browser will abort the connection to the backend (specially the POST, PUT, DELETE requests).
+So it is something the backend must care about.
+
+To anyway use backend
+There are several ways.
+It seems the easiest seems to be to use the cors library. Therefore install
+
+    1. npm install cors @types/cores
+    2. add cors() as middleware
+        server.user(cors())
+    3. In addition the client has to care about by adding mode: "cors" to the header when e.g. sending fetch requests out of React
+        fetch(url, { 
+            method: "POST",
+            mode: "cors",
+        })
