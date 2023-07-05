@@ -4,4 +4,4 @@ Which data are exchanged between server and client?
 - HTML
 - plain Text
 - XML
-- JSON
+- JSON (JavaScript Object Notation)

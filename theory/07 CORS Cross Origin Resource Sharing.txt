@@ -9,6 +9,7 @@ So it is something the backend must care about.
 
 To anyway use backend
 There are several ways.
+
 It seems the easiest seems to be to use the cors library. Therefore install
 
     1. npm install cors @types/cores
@@ -19,3 +20,8 @@ It seems the easiest seems to be to use the cors library. Therefore install
             method: "POST",
             mode: "cors",
         })
+
+
+!!!!!!!! Attention it seems there is another either way by just adjusting the header. I tried that out, it didnt work, but now it does :P.
+
+Therefore add to the server code the following
