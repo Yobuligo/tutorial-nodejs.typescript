@@ -1,0 +1,7 @@
+REST means Representational State Transfer or in other word: Transfer data instead of User Interface
+
+Which data are exchanged between server and client?
+- HTML
+- plain Text
+- XML
+- JSON
