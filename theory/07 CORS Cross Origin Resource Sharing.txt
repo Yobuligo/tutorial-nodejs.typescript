@@ -25,3 +25,9 @@ It seems the easiest seems to be to use the cors library. Therefore install
 !!!!!!!! Attention it seems there is another either way by just adjusting the header. I tried that out, it didnt work, but now it does :P.
 
 Therefore add to the server code the following
+    app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Methods","GET, POST, PUT, PATCH, DELETE");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    next();
+    });
